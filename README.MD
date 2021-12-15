@@ -28,6 +28,18 @@ To run this sample, you will need to update the `appsettings.json` file with you
 }
 ```
 
+Update the `local.settings.json` file with the following details
+
+```
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+    }
+}
+```
+
 The sample already contains the .vscode folder with the necessary settings to run the Azure Function locally and help you debug any issues. Open the debugger and use the `Attach to .NET Functions` option to start debugging.
 
 ![deubbing in vs code](images/vs-code-debugging.png)
